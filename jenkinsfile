@@ -10,6 +10,6 @@ node {
    }
    stage('deployment')
    {
-       deploy adapters: [tomcat9(credentialsId: 'mytomcat', path: '', url: 'http://localhost:8080/')], contextPath: 'mysecondjob', war: '**/*.war' 
+       deploy adapters: [tomcat9(credentialsId: 'mytomcat', path: '', url: 'http://localhost:8080/')], contextPath: 'myfourthjob', war: '**/*.war' 
    }
 }
